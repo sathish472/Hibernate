@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.she.entity">
+    <class name="Address" table="address">
+        <id name="addressNo" column="ADDRESS_NO" type="java.lang.Integer"/>
+        <property name="addressLine1" type="java.lang.String">
+            <column name="ADDRESS_LINE1" sql-type="VARCHAR" not-null="true" scale="20"/>
+        </property>
+        <property name="addressLine2" column="ADDRESS_LINE2"/>
+        <property name="city" column="CITY"/>
+        <property name="state" column="STATE"/>
+        <property name="country" column="COUNTRY"/>
+    </class>
+</hibernate-mapping>
