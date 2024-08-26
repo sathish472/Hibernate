@@ -55,8 +55,7 @@ public class Bus implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Bus)) return false;
-        Bus bus = (Bus) o;
+        if (!(o instanceof Bus bus)) return false;
         return getBusNo() == bus.getBusNo() && getCapacity() == bus.getCapacity() && getPrice() == bus.getPrice() && Objects.equals(getRegNo(), bus.getRegNo()) && Objects.equals(getMaker(), bus.getMaker());
     }
 
