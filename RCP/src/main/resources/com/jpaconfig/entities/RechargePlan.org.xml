@@ -18,6 +18,5 @@
                 <column name="recharge_amt"/>
             </basic>
         </attributes>
-
     </entity>
 </entity-mappings>
