@@ -84,4 +84,16 @@ public class Match {
     public int hashCode() {
         return Objects.hash(getMatchNo(), getTname(), getMatch_dt(), getPlayer1(), getPlayer2(), getLocation());
     }
+
+    @Override
+    public String toString() {
+        return "Match{" +
+                "matchNo=" + matchNo +
+                ", tname='" + tname + '\'' +
+                ", match_dt=" + match_dt +
+                ", player1='" + player1 + '\'' +
+                ", player2='" + player2 + '\'' +
+                ", location='" + location + '\'' +
+                '}';
+    }
 }
